@@ -12,37 +12,37 @@ int romanToInt(char * s) {
     // convert Roman numerals to integer values 
     // then add to or subtract from the sum
     int i = 0;
-    for (i=0; i <= len; i++) {   
+    for (i= len - 1; i >= 0 ; i--) {   
         // convert values
         int val = 0;
-        if (s[len-i] == 'M') {
+        if (s[i] == 'M') {
             val = 1000;
         }
-        else if (s[len-i] == 'D') {
+        else if (s[i] == 'D') {
             val = 500;
         }
-        else if (s[len-i] == 'C') {
+        else if (s[i] == 'C') {
             val = 100;
         }
-        else if (s[len-i] == 'L') {
+        else if (s[i] == 'L') {
             val = 50;
         }
-        else if (s[len-i] == 'X') {
+        else if (s[i] == 'X') {
             val = 10;
         }
-        else if (s[len-i] == 'V') {
+        else if (s[i] == 'V') {
             val = 5;
         }
-        else if (s[len-i] == 'I') {
+        else if (s[i] == 'I') {
             val = 1;
         }
 
         // decide whether to add or subtract val
         if (val >= prev) {
-            sum = sum + val;
+            sum += val;
         }
         else if (val < prev) {
-            sum = sum - val;
+            sum -= val;
         }
 
         prev = val; // update prev before next loop
