@@ -1,3 +1,3 @@
 # C
 
-Leetcode and other experiments in C.
+Leetcode in C.
