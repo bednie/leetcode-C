@@ -42,7 +42,7 @@ int romanToInt(char * s) {
             sum += val;
         }
         else if (val < prev) {
-            sum -= val;
+;
         }
 
         prev = val; // update prev before next loop

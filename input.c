@@ -1,4 +1,5 @@
-// input.c 
+// input.c
+// Example from C Primer Plus by Stephen Prata 
 #include <stdio.h>
 #include <time.h>
 
