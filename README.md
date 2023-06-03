@@ -1,5 +1,3 @@
 # C
 
-Leetcode in C.
-
-test ssh.
+C leetcode practice.
